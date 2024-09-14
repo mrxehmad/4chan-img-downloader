@@ -51,9 +51,3 @@ The images will be saved in a folder called `downloaded_images` with names like:
 ## License
 
 This project is licensed under the MIT License.
-
-
-### Steps to Follow:
-1. Create a new file for the script (e.g., `image_downloader.py`).
-2. Create a `README.md` file with the provided content.
-3. Run the script, enter the filename (e.g., `more.txt`), and it will download images into the `downloaded_images` folder.
