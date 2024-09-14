@@ -1,12 +1,20 @@
 import os
 import requests
 
+# Get the input file name from the user
+input_file = input("Enter the name of the file containing image URLs (e.g., more.txt): ")
+
+# Check if the file exists
+if not os.path.isfile(input_file):
+    print(f"File '{input_file}' not found!")
+    exit()
+
 # Read the file containing the image URLs
-with open('more.txt', 'r') as file:
+with open(input_file, 'r') as file:
     urls = file.readlines()
 
 # Start naming images from 51
-start_index = 108
+start_index = 51
 
 # Create a directory to save the downloaded images
 os.makedirs('downloaded_images', exist_ok=True)
